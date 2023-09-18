@@ -1,1 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>University Home</title>
+</head>
+<body>
+    <header>
+        <a href="home.html" class="logo-link">VIT AP</a></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="student.html">Students</a></li>
+                <li><a href="department.html">Departments</a></li>
+                <li><a href="placement.html">Placement</a></li>
+                <li><a href="alumni.html">Alumni</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="welcome-container">
+        <br>
+        <h1>Welcome to VIT AP University</h1>
+        <br>
+        <br>
+        <p>Ignite Your Potential, Shape Your Future</p>
+    </div>
+        <div class="logo">
+            <img src="https://vitap.ac.in/wp-content/uploads/2017/12/vitapnew.png" alt="University Logo">
+        </div>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form id="registrationForm" action="#" method="post">
+            <div class="form-group">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" required>
+                <span class="error-message" id="fnameError"></span>
+            </div>
+            
+            <div class="form-group">
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" required>
+                <span class="error-message" id="lnameError"></span>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error-message" id="emailError"></span>
+            </div>
+            
+            <div class="form-group">
+                <label for="mobile">Mobile Number:</label>
+                <input type="tel" id="mobile" name="mobile" pattern="^\d{10}$" required>
+                <span class="error-message" id="mobileError"></span>
+            </div>
+            
+            <button type="submit">Register</button>
+        </form>
+        <div id="successMessage" class="success-message" style="display: none;">
+            Registered Successfully!
+        </div>
+    </div>
+
+    <script>
+        const firstNameInput = document.getElementById("fname");
+        const lastNameInput = document.getElementById("lname");
+        const emailInput = document.getElementById("email");
+        const mobileInput = document.getElementById("mobile");
+        const successMessage = document.getElementById("successMessage");
+
+        const firstNameRegex = /^[A-Za-z]+$/;
+        const lastNameRegex = /^[A-Za-z]+$/;
+        const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
+        const mobileRegex = /^\d{10}$/;
+
+        function validateForm() {
+            const firstName = firstNameInput.value;
+            const lastName = lastNameInput.value;
+            const email = emailInput.value;
+            const mobileNumber = mobileInput.value;
+
+            let isValid = true;
+
+            if (!firstNameRegex.test(firstName)) {
+                document.getElementById("fnameError").textContent = "Invalid first name.";
+                isValid = false;
+            } else {
+                document.getElementById("fnameError").textContent = "";
+            }
+
+            if (!lastNameRegex.test(lastName)) {
+                document.getElementById("lnameError").textContent = "Invalid last name.";
+                isValid = false;
+            } else {
+                document.getElementById("lnameError").textContent = "";
+            }
+
+            if (!emailRegex.test(email)) {
+                document.getElementById("emailError").textContent = "Invalid email address.";
+                isValid = false;
+            } else {
+                document.getElementById("emailError").textContent = "";
+            }
+
+            if (!mobileRegex.test(mobileNumber)) {
+                document.getElementById("mobileError").textContent = "Invalid mobile number.";
+                isValid = false;
+            } else {
+                document.getElementById("mobileError").textContent = "";
+            }
+
+            return isValid;
+        }
+
+        document.getElementById("registrationForm").addEventListener("submit", (event) => {
+            event.preventDefault();
+            if (validateForm()) {
+                successMessage.style.display = "block";
+            }
+        });
+    </script>
+    </div>
+    </div>
+
+
+    <footer style="bottom: 0;">
+        <p>&copy; 2023 VIT AP University. All rights reserved.</p>
+    </footer>
+</body>
+</html>
 
