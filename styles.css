@@ -1,0 +1,459 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.main-content {
+    padding: 2rem;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: absolute;
+    width: 98.3%;
+    overflow: hidden;
+}
+/* ... Previous CSS code ... */
+
+/* Logo Link Styling */
+.logo-link {
+    text-decoration: none;
+    color: #fff; /* Change the color as desired */
+    transition: color 0.3s ease;
+}
+
+.logo-link:hover {
+    color: #555; /* Change the color on hover */
+}
+/* ... Previous CSS code ... */
+
+/* Login Form Styles */
+/* ... Previous CSS code ... */
+
+/* Login Box Styles */
+ .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"], input[type="email"], input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .error-message {
+            color: #ff0000;
+            font-size: 14px;
+        }
+
+        .success-message {
+            color: green;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #007acc;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #005d9e;
+        }
+
+/* Courses Table Styles */
+.courses-table {
+    margin: 2rem auto;
+    max-width: 800px;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.courses-table h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+thead {
+    background-color: #f5f5f5;
+}
+
+th, td {
+    padding: 0.5rem;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+th {
+    font-weight: bold;
+}
+/* ... Previous CSS code ... */
+
+/* Department Section Styles */
+.department-section {
+    margin: 2rem auto;
+    max-width: 800px;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.department-section h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.department {
+    margin-bottom: 2rem;
+}
+
+.department h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.department p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.department-link {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.department-link:hover {
+    background-color: #2980b9;
+}
+
+/* ... Previous CSS code ... */
+
+/* Placement Section Styles */
+.placement-section {
+    margin: 2rem auto;
+    max-width: 800px;
+    padding: 5rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.placement-section h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.placement-item {
+    margin-bottom: 2rem;
+}
+
+.placement-item h2 {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.placement-item p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 5rem;
+}
+
+.placement-line {
+    display: flex;
+    align-items: center;
+}
+
+.placement-circle {
+    text-align: center;
+    margin-right: 5rem;
+}
+
+.placement-circle img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+}
+
+.placement-circle p {
+    font-size: 1rem;
+}
+/* ... Previous CSS code ... */
+
+/* Alumni Section Styles */
+/* ... Previous CSS code ... */
+
+/* Alumni Section Styles */
+.alumni-section {
+    margin: 2rem auto;
+    max-width: 800px;
+    padding: 2rem;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.alumni-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.alumni-story {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.alumni-story img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 1rem;
+}
+
+.alumni-story h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #444;
+}
+
+.alumni-story p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.alumni-events {
+    margin-top: 2rem;
+}
+
+.alumni-events h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #444;
+}
+
+.alumni-events p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+/* ... Previous CSS code ... */
+
+/* Contact Section Styles */
+.contact-section {
+    margin: 2rem auto;
+    max-width: 800px;
+    padding: 2rem;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.contact-info {
+    margin-top: 2rem;
+}
+
+.contact-info h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #444;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.contact-form {
+    margin-top: 2rem;
+}
+
+.contact-form h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #444;
+}
+
+.contact-form form {
+    text-align: left;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+/* ... Previous CSS code ... */
+
+/* Hero Section Styles */
+.hero {
+    background-image: url("hero_image.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.cta-button:hover {
+    background-color: #444;
+}
+
+/* Features Section Styles */
+.features {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 4rem auto;
+}
+
+.feature {
+    flex-basis: calc(33.33% - 2rem);
+    background-color: #f8f8f8;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.feature p {
+    font-size: 1.1rem;
+    color: #555;
+}
+.logo {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.logo img {
+    max-width: 300px; /* Adjust the size as needed */
+}
